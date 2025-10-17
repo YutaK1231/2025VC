@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+  font-family: "MS PGothic", sans-serif;
+}
+
+h1 {
+  color: #fb8108;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 40px;
+}
+
+.key {
+  color: #f3f8e0;
+  background-color: #0046f9;
+  font-size: x-large;
+}
+
+body p img {
+  border: 10px dotted #00fa43;
+  width: 100px;
+  height: 100px;
+}
