@@ -2,6 +2,12 @@ body {
   background-color: #ffc0cb;
 }
 
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  color: #800000;
+}
+
 img {
   width: 100%;
 }
@@ -11,6 +17,7 @@ img {
 }
 
 .cakes {
+  margin: 1.25%;
   float: left;
-  width: 50%;
+  width: 45%;
 }
