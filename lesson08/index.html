@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>計算</title>
+    <script>
+      function calc() {
+        // 入力値を取得
+        let a = Number(document.getElementById("a").value);
+        let b = Number(document.getElementById("b").value);
+
+        // 選択された計算方法を取得
+        const method = document.querySelector(
+          'input[name="method"]:checked'
+        ).value;
+
+        let ans;
+
+        if (method === "add") {
+          ans = a + b;
+        } else if (method === "dif") {
+          ans = a - b;
+        } else if (method === "mul") {
+          ans = a * b;
+        } else if (method === "div") {
+          if (b === 0) {
+            ans = "Error";
+            alert("0で割ることはできません");
+          } else {
+            ans = a / b;
+          }
+        }
+
+        // 結果をテキストボックスに表示
+        document.getElementById("answer").value = ans;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>２つの数の計算</h1>
+    <form onsubmit="return false">
+      A= <input type="text" id="a" /> <br />
+      B= <input type="text" id="b" /> <br />
+
+      <label
+        ><input type="radio" name="method" value="add" checked />足し算</label
+      >
+      <label><input type="radio" name="method" value="dif" />引き算</label>
+      <label><input type="radio" name="method" value="mul" />掛け算</label>
+      <label><input type="radio" name="method" value="div" />割り算</label>
+      <br />
+
+      <input type="button" onclick="calc()" value="計算する" /> <br />
+      答え= <input type="text" id="answer" />
+    </form>
+  </body>
+</html>
