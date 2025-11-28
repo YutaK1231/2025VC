@@ -1,3 +1,11 @@
+h2 {
+  font-family: "メイリオ", Meiryo, "Meiryo UI", sans-serif;
+}
+
+p {
+  font-family: "Times New Roman", "MS P明朝", "MS PMincho", serif;
+}
+
 /* --- 固定ヘッダー --- */
 header {
   position: fixed;
@@ -40,6 +48,12 @@ nav a {
   font-weight: bold;
 }
 
+nav img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 /* ヘッダーが固定されるので、その分下に余白を作る */
 .header-space {
   height: 60px; /* ヘッダーと同じ高さにする */
@@ -48,4 +62,11 @@ nav a {
 /* ビデオ */
 video {
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.svgs {
+  height: 50px;
+  width: auto;
+  display: block;
 }
