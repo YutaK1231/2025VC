@@ -1,0 +1,65 @@
+.kodawari {
+  margin-bottom: 60px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  margin-bottom: 10px;
+}
+
+.text p {
+  line-height: 1.8;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+}
+
+.images img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.kodawari:nth-of-type(odd) .row {
+  flex-direction: row;
+}
+
+.kodawari:nth-of-type(even) .row {
+  flex-direction: row-reverse;
+}
+
+/* --- ギャラリーエリア --- */
+.gallery-container {
+  margin-top: 40px;
+  overflow-x: auto; /* 横スクロール可能にする */
+  padding-bottom: 10px; /* 下に少し余白（スクロールバー避け） */
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  width: max-content; /* 画像分の幅になるので横スクロールされる */
+}
+
+.gallery img {
+  width: 250px; /* 一度に4枚程度見えるサイズ */
+  height: auto;
+  border-radius: 5px;
+  flex-shrink: 0; /* 横幅が縮まないように固定 */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
