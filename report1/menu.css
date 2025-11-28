@@ -1,6 +1,7 @@
 .menus {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .menus p {
@@ -19,7 +20,7 @@
   width: 100%;
   display: block;
   overflow: hidden;
-  transition: transform .6s ease;
+  transition: transform 0.6s ease;
 }
 
 .menu img:hover {

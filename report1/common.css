@@ -22,6 +22,11 @@ header {
   margin-right: 100px; /* ← ロゴとメニューの間の大きめ余白 */
 }
 
+.logo img {
+  width: 55px;
+  height: 55px;
+}
+
 /* ナビゲーション（右側の項目） */
 nav {
   display: flex;
