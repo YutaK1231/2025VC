@@ -1,5 +1,18 @@
+.context {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .kodawari {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px gray;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform .6s ease;
+}
+
+.kodawari:hover {
+  transform: scale(1.05);
 }
 
 .row {
@@ -10,6 +23,7 @@
 
 .text {
   flex: 1;
+  padding-left: 30px;
 }
 
 .text h2 {
@@ -62,4 +76,8 @@
 a {
   text-decoration: none;
   color: black;
+}
+
+video {
+  width: 100%;
 }
