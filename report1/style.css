@@ -1,5 +1,26 @@
+.menus {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menus p {
+  display: block;
+  width: 100%;
+}
+
+.menu {
+  width: 11.5%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  text-align: center;
+}
+
 .menu img {
-  width: 250px;
-  height: 250px;
-  margin: 10px;
+  width: 100%;
+  display: block;
+}
+
+.menu p {
+  font-size: 14px;
+  margin-top: 5px;
 }
