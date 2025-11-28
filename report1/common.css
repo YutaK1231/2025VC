@@ -37,9 +37,15 @@ nav a {
   text-decoration: none;
   color: #333;
   font-size: 18px;
+  font-weight: bold;
 }
 
 /* ヘッダーが固定されるので、その分下に余白を作る */
 .header-space {
   height: 60px; /* ヘッダーと同じ高さにする */
+}
+
+/* ビデオ */
+video {
+  width: 100%;
 }
