@@ -1,0 +1,88 @@
+.context {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.block {
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px gray;
+  border-radius: 5px;
+}
+
+.kodawari {
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+
+.kodawari:hover {
+  transform: scale(1.05);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text h2 {
+  margin-bottom: 10px;
+}
+
+.text p {
+  line-height: 1.8;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+}
+
+.images img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.kodawari:nth-of-type(odd) .row {
+  flex-direction: row;
+}
+
+.kodawari:nth-of-type(even) .row {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* --- ギャラリーエリア --- */
+.gallery-container {
+  margin-top: 40px;
+  overflow-x: auto; /* 横スクロール可能にする */
+  padding-bottom: 10px; /* 下に少し余白（スクロールバー避け） */
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  width: max-content; /* 画像分の幅になるので横スクロールされる */
+}
+
+.gallery img {
+  width: 250px; /* 一度に4枚程度見えるサイズ */
+  height: auto;
+  border-radius: 5px;
+  flex-shrink: 0; /* 横幅が縮まないように固定 */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

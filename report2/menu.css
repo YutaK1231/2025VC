@@ -1,0 +1,40 @@
+.menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* ▼ カテゴリー見出し（food.svg など）を中央に1行表示 */
+.menus > .svgs {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.menus > .svgs img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ▼ メニュー画像 */
+.menu {
+  width: 20%;
+  margin: 1%;
+  text-align: center;
+}
+
+.menu > img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+/* ▼ メニュー名 */
+.menu p {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: "Varela";
+}
