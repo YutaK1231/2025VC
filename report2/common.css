@@ -76,3 +76,7 @@ body {
     padding: 0.6rem 1rem;
   }
 }
+
+p {
+  font-family: "Times New Roman", "MS P明朝", "MS PMincho", serif;
+}
