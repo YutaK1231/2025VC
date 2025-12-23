@@ -29,3 +29,50 @@ body {
   max-height: 520px;
   object-fit: cover;
 }
+
+/* PCでは hover で dropdown を開く（タッチ端末では hover にならないので安全） */
+@media (hover: hover) and (pointer: fine) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* navbarが折りたたまれる幅（lg未満）では、メニューを縦に並べる */
+/* 折りたたみ時（= navbar-collapse 内）だけ、メニューを縦展開にする */
+@media (max-width: 1199.98px) {
+  /* ここが重要：navbar-collapse の中にある時だけ適用 */
+  .navbar .navbar-collapse.show .menu-split {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar .navbar-collapse.show .menu-split > a {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .navbar-collapse.show .menu-split .dropdown-toggle-split {
+    margin-left: auto;
+    padding-right: 0;
+  }
+
+  .navbar .navbar-collapse.show .menu-split .dropdown-menu {
+    position: static;
+    width: 100%;
+    flex-basis: 100%;
+    margin-top: 0.25rem;
+
+    display: none;
+    text-align: left !important;
+  }
+
+  .navbar .navbar-collapse.show .menu-split .dropdown-menu.show {
+    display: block;
+  }
+
+  .navbar .navbar-collapse.show .menu-split .dropdown-item {
+    padding: 0.6rem 1rem;
+  }
+}

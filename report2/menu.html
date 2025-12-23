@@ -18,7 +18,7 @@
 
   <body>
     <!-- Navbar（indexと同じ） -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-xl bg-white shadow-sm fixed-top">
       <div class="container">
         <a
           class="navbar-brand d-flex align-items-center gap-2"
@@ -55,44 +55,39 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="menu.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="logo/menu.svg" alt="メニュー" class="nav-svg" />
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end text-center">
-                <li>
-                  <a class="dropdown-item" href="#food">
-                    <img
-                      src="logo/food.svg"
-                      alt="フードメニュー"
-                      class="drop-svg"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#drink">
-                    <img
-                      src="logo/drink.svg"
-                      alt="ドリンクメニュー"
-                      class="drop-svg"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#course">
-                    <img
-                      src="logo/course.svg"
-                      alt="コースメニュー"
-                      class="drop-svg"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <div class="menu-split d-flex align-items-center">
+                <!-- クリックしたら menu.html へ遷移する本体リンク -->
+                <a class="nav-link d-flex align-items-center" href="menu.html">
+                  <img src="logo/menu.svg" alt="メニュー" class="nav-svg" />
+                </a>
+
+                <!-- ▼（開閉専用ボタン） -->
+                <button
+                  class="btn btn-link nav-link px-1 dropdown-toggle dropdown-toggle-split"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-label="メニューを開く"
+                ></button>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="menu.html#food"
+                      ><img src="logo/food.svg" alt="Food" class="drop-svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="menu.html#drink"
+                      ><img src="logo/drink.svg" alt="Drink" class="drop-svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="menu.html#course"
+                      ><img src="logo/course.svg" alt="Course" class="drop-svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="nav-item">

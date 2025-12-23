@@ -19,7 +19,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-xl bg-white shadow-sm fixed-top">
       <div class="container">
         <a
           class="navbar-brand d-flex align-items-center gap-2"
@@ -56,44 +56,39 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="menu.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="logo/menu.svg" alt="メニュー" class="nav-svg" />
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end text-center">
-                <li>
-                  <a class="dropdown-item" href="menu.html#food">
-                    <img
-                      src="logo/food.svg"
-                      alt="フードメニュー"
-                      class="drop-svg"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="menu.html#drink">
-                    <img
-                      src="logo/drink.svg"
-                      alt="ドリンクメニュー"
-                      class="drop-svg"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="menu.html#course">
-                    <img
-                      src="logo/course.svg"
-                      alt="コースメニュー"
-                      class="drop-svg"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <div class="menu-split d-flex align-items-center">
+                <!-- クリックしたら menu.html へ遷移する本体リンク -->
+                <a class="nav-link d-flex align-items-center" href="menu.html">
+                  <img src="logo/menu.svg" alt="メニュー" class="nav-svg" />
+                </a>
+
+                <!-- ▼（開閉専用ボタン） -->
+                <button
+                  class="btn btn-link nav-link px-1 dropdown-toggle dropdown-toggle-split"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-label="メニューを開く"
+                ></button>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="menu.html#food"
+                      ><img src="logo/food.svg" alt="Food" class="drop-svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="menu.html#drink"
+                      ><img src="logo/drink.svg" alt="Drink" class="drop-svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="menu.html#course"
+                      ><img src="logo/course.svg" alt="Course" class="drop-svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="nav-item">
@@ -120,7 +115,7 @@
       <!-- Hero video -->
       <div class="container-fluid p-0">
         <video
-          src="video/ワイン.mp4"
+          src="video/パスタ.mp4"
           autoplay
           muted
           loop
@@ -136,35 +131,47 @@
             <img src="logo/about.svg" alt="当店について" class="section-svg" />
           </div>
 
-          <div class="row align-items-center g-4">
-            <div class="col-lg-7">
-              <div class="p-4 border rounded-4 shadow-sm bg-white">
-                <h2 class="h5 lh-lg mb-3">
-                  『普段使いの気取らない贅沢しませんか？』ワインの専門家はいません。<br />
-                  自分達が美味しいと思ったワインだけをご用意しております。<br />
-                  幸せを呼ぶ…ワインと国産牛肉とチーズの美味しいお店です。
-                </h2>
-                <p class="mb-2">女子会、記念日、友人とお気軽にどうぞ！！</p>
-                <p class="mb-2">
-                  都田沼駅より徒歩2分とアクセス抜群！！お仕事帰りや大切なパートナー、そしてひとり飲みにも様々なシーンにご利用下さい。
-                </p>
-                <p class="mb-2">
-                  誕生日のサプライズも大歓迎！！ケーキ持ち込み可能です。
-                </p>
-                <p class="mb-0">
-                  居心地の良い店内<br />
-                  いつも笑顔が溢れる明るい店内です。初めての方もお気軽にお越しください。
-                </p>
-              </div>
-            </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4">
+                  <div class="row align-items-center g-4">
+                    <!-- 文章 -->
+                    <div class="col-lg-7">
+                      <h2 class="h5 lh-lg mb-3">
+                        『普段使いの気取らない贅沢しませんか？』ワインの専門家はいません。<br />
+                        自分達が美味しいと思ったワインだけをご用意しております。<br />
+                        幸せを呼ぶ…ワインと国産牛肉とチーズの美味しいお店です。
+                      </h2>
 
-            <div class="col-lg-5">
-              <div class="text-center">
-                <img
-                  src="logo/logo.jpg"
-                  alt="ロゴ"
-                  class="img-fluid rounded-4 shadow-sm"
-                />
+                      <p class="mb-2">
+                        女子会、記念日、友人とお気軽にどうぞ！！
+                      </p>
+                      <p class="mb-2">
+                        都田沼駅より徒歩2分とアクセス抜群！！お仕事帰りや大切なパートナー、
+                        そしてひとり飲みにも様々なシーンにご利用下さい。
+                      </p>
+                      <p class="mb-2">
+                        誕生日のサプライズも大歓迎！！ケーキ持ち込み可能です。
+                      </p>
+                      <p class="mb-0">
+                        居心地の良い店内<br />
+                        いつも笑顔が溢れる明るい店内です。初めての方もお気軽にお越しください。
+                      </p>
+                    </div>
+
+                    <div
+                      class="ratio ratio-16x9 rounded-4 shadow-sm overflow-hidden"
+                    >
+                      <img
+                        src="img/ワイン.gif"
+                        alt="店舗紹介GIF"
+                        class="w-100 h-100"
+                        style="object-fit: cover"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
